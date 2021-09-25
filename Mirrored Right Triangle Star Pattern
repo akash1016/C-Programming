@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main()
+{
+    printf("Patterns\n ");
+    int n,m=0;
+    printf("Enter nomber of rows = "); /* asking user for input*/
+    scanf("%d",&n);
+    for(int i=n; i>=1; i--){          /* Creating loop for adding new line*/
+        for(int j=1; j<i; j++){      /* Creating loop for adding spaces to line*/
+            printf(" ");
+        }
+        for(int k=0; k<=m; k++){     /* Creating loop for adding asteric sign*/
+            printf("*");
+        }
+        printf("\n");
+        m++;
+    }
+
+    return 0;
+}
