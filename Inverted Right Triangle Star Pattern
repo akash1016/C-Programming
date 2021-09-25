@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main()
+{
+    printf("Patterns\n ");
+    int n,m=0;
+    printf("Enter number of rows = "); /* asking user for input*/
+    scanf("%d",&n);
+    for(int i=n; i>=1; i--){          /* Creating loop for adding new line*/
+        for(int j=i; j>=1; j--){       /* Creating loop for adding star*/
+            printf("* ");
+            
+        }
+        printf("\n");
+    }
